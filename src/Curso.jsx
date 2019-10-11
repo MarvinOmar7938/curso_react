@@ -3,7 +3,7 @@ import React from 'react'
 const persona = {"nombre":"Marvin" , "apellido":"Tola","edad":35}
 
 const Curso = ({title,image,price, profesor}) => (
-    <article className="card" id={title}>
+    <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
       <img src={image} alt={title} />
     </div>
