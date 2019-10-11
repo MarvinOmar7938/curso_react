@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const persona = {"nombre":"Marvin" , "apellido":"Tola","edad":35}
 
@@ -10,13 +11,25 @@ const Curso = ({title,image,price, profesor}) => (
     <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
         <h3 className="center">{title}</h3>
         <div className="s-main-center">
-          {`Prof.: ${profesor}`}
+          {profesor}
         </div>
       <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="#">{`$ ${price}`}</a>
+        <a className="button--ghost-alert button--tiny" href="#">{`$ ${price} USD`}</a>
       </div>
     </div>
   </article>
 )
 
+Curso.propTypes = {
+  title:PropTypes.string,
+  image:PropTypes.string,
+  price:PropTypes.number,
+  profesor:PropTypes.string
+}
+Curso.defaultProps={
+  title:"No se encontro titulo",
+  image:"https://c.pxhere.com/photos/c3/26/new_york_manhattan_brooklyn_city_black_and_white_bridge_classic-576176.jpg!d",
+  price:"--",
+  profesor:""
+}
 export default Curso

@@ -18,7 +18,7 @@ const App=() => (
   </div>
 </div>
 <div className="ed-grid m-grid-3">
-  <Curso />
+  <Curso title="React desde cero" price={20}/>
 </div>
   </>
 )
