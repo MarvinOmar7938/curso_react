@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const persona = {"nombre":"Marvin" , "apellido":"Tola","edad":35}
-
 const Curso = ({title,image,price, profesor}) => (
     <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
@@ -14,7 +12,7 @@ const Curso = ({title,image,price, profesor}) => (
           {profesor}
         </div>
       <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="#">{`$ ${price} USD`}</a>
+        <a className="button--ghost-alert button--tiny" href="https://ed.team">{`$ ${price} USD`}</a>
       </div>
     </div>
   </article>
